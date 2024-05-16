@@ -4,6 +4,10 @@ local keymap = vim.keymap
 -- Leader
 g.mapleader = " "
 
+-- Navigation
+keymap.set("n", "j", "k")
+keymap.set("n", "k", "j")
+
 -- Suche
 keymap.set("n", "<leader>nh", "<cmd>nohl<CR>", { desc = "Entfernt die aktuellen Highlights." })
 
