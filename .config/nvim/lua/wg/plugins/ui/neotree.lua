@@ -23,6 +23,19 @@ return {
             "node_modules"
           }
         }
+      },
+      default_component_configs = {
+        git_status = {
+          symbols = {
+            deleted = "",
+            renamed = "",
+            untracked = "",
+            ignored = "",
+            unstaged = "",
+            staged = "",
+            conflict = ""
+          }
+        }
       }
     })
 
