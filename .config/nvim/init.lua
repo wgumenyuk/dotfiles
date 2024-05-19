@@ -17,7 +17,7 @@ require("wg.core")
 require("lazy").setup(
   {
     { import = "wg.plugins" },
-    -- { import = "wg.plugins.lsp" },
+    { import = "wg.plugins.lsp" },
     { import = "wg.plugins.ui" },
   },
   {
