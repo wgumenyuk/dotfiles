@@ -14,6 +14,9 @@ opt.smartindent = true
 opt.number = true
 opt.signcolumn = "yes"
 
+-- Statusline
+opt.laststatus = 3
+
 -- Cursor
 opt.guicursor = "i:block"
 

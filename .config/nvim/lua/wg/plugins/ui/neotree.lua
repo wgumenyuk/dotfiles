@@ -36,6 +36,13 @@ return {
             conflict = ""
           }
         }
+      },
+      sources = {
+        "filesystem",
+        "git_status"
+      },
+      source_selector = {
+        winbar = true
       }
     })
 
