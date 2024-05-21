@@ -8,7 +8,7 @@ if not (vim.uv or vim.loop).fs_stat(lazy_path) then
     "--depth=1",
     "https://github.com/folke/lazy.nvim.git",
     lazy_path
-  }) 
+  })
 end
 
 vim.opt.rtp:prepend(lazy_path)

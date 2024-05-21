@@ -27,6 +27,7 @@ return {
         "svelte",
         "tmux",
         "typescript",
+        "tsx",
         "vim",
         "vimdoc",
         "yaml"
