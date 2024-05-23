@@ -7,6 +7,7 @@ return {
     },
     scope = {
       enabled = false
-    }
+    },
+    debounce = 50
   }
 }
