@@ -12,6 +12,7 @@ if not (vim.uv or vim.loop).fs_stat(lazy_path) then
 end
 
 vim.opt.rtp:prepend(lazy_path)
+vim.loader.enable()
 
 require("wg.core")
 require("lazy").setup(
