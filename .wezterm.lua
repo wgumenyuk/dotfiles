@@ -29,10 +29,20 @@ return {
   font = wezterm.font("JetBrainsMono Nerd Font Mono"),
   font_size = 14.0,
 
+  -- Maus
+  hide_mouse_when_typing = false,
+
   -- Window
   initial_cols = 100,
   initial_rows = 30,
   enable_tab_bar = false,
-  window_close_confirmation = "NeverPrompt"
-}
+  window_close_confirmation = "NeverPrompt",
 
+  -- Keybinds
+  keys = {
+    {
+      key = "F11",
+      action = wezterm.action.ToggleFullScreen
+    }
+  }
+}
