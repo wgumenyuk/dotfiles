@@ -1,10 +1,27 @@
 local wezterm = require("wezterm")
 
+local get_os = function()
+  local target = wezterm.target_triple
+
+  if target:find("windows") then
+    return "windows"
+  elseif target:find("linux") then
+    return "linux"
+  else
+    return nil
+  end
+end
+
+local default_prog = get_os() == "linux" and { "bin/bash" } or { "powershell.exe" }
+
 wezterm.on("format-window-title", function()
   return "Terminal"
 end)
 
 return {
+  -- Shell
+  default_prog = default_prog,
+
   -- Theme
   color_scheme = "catppuccin-mocha",
 
