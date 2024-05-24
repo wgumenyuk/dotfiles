@@ -30,7 +30,7 @@ return {
   font_size = 14.0,
 
   -- Maus
-  hide_mouse_when_typing = false,
+  hide_mouse_cursor_when_typing = false,
 
   -- Window
   initial_cols = 100,
