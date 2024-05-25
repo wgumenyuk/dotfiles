@@ -12,7 +12,7 @@ local get_os = function()
   end
 end
 
-local default_prog = get_os() == "linux" and { "bin/bash" } or { "powershell.exe" }
+local default_prog = get_os() == "linux" and { "/bin/bash" } or { "powershell.exe" }
 
 wezterm.on("format-window-title", function()
   return "Terminal"
