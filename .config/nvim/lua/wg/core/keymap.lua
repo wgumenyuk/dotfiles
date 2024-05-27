@@ -23,3 +23,7 @@ keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Schließt den aktue
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Wechselt zum nächsten Tab." })
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Wechselt zum vorherigen Tab." })
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Öffnet den aktuellen Buffer in einem neuen Tab." })
+
+-- Zeilen verschieben
+keymap.set("n", "<A-Up>", "<cmd>m-2<CR>", { desc = "Verschiebt die Zeile um eins nach oben." })
+keymap.set("n", "<A-Down>", "<cmd>m+<CR>", { desc = "Verschiebt die Zeile um eins nach unten." })

@@ -7,8 +7,21 @@ return {
     require("mason").setup()
     require("mason-lspconfig").setup({
       ensure_installed = {
+        "autotools_ls",
+        "bashls",
+        "cssls",
+        "clangd",
+        "dockerls",
+        "gopls",
+        "html",
+        "jsonls",
         "lua_ls",
-        "tsserver"
+        "pyright",
+        "remark_ls",
+        "svelte",
+        "tailwindcss",
+        "tsserver",
+        "yamlls"
       }
     })
   end
