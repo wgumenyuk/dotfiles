@@ -1,5 +1,6 @@
 local associations = {
-  ["*.swcrc"] = "json"
+  ["*.swcrc"] = "json",
+  [".env*"] = "sh"
 }
 
 for k, v in pairs(associations) do
