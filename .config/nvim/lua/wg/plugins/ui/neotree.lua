@@ -25,15 +25,20 @@ return {
         }
       },
       default_component_configs = {
+        modified = {
+          symbol = "*"
+        },
         git_status = {
           symbols = {
+            added = "A",
+            modified = "M",
             deleted = "",
             renamed = "",
-            untracked = "",
+            untracked = "U",
             ignored = "",
             unstaged = "",
-            staged = "",
-            conflict = ""
+            staged = "A",
+            conflict = "!"
           }
         }
       },
@@ -50,5 +55,7 @@ return {
 
     keymap.set("n", "<leader>ee", "<cmd>Neotree toggle<CR>", { desc = "Schaltet den Dateiexplorer um." })
     keymap.set("n", "<leader>ef", "<cmd>Neotree reveal<CR>", { desc = "Zeigt die geöffnete Datei im Dateiexplorer an." })
+
+    vim.cmd("highlight NeoTreeModified guifg=#f9e2af")
   end
 }
