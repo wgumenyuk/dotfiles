@@ -27,3 +27,6 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Öffnet den aktuell
 -- Zeilen verschieben
 keymap.set("n", "<A-Up>", "<cmd>m-2<CR>", { desc = "Verschiebt die Zeile um eins nach oben." })
 keymap.set("n", "<A-Down>", "<cmd>m+<CR>", { desc = "Verschiebt die Zeile um eins nach unten." })
+
+-- Definition anzeigen
+keymap.set("n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", { desc = "Zeigt die Definition an." })
