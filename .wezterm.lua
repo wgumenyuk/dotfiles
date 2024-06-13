@@ -49,6 +49,9 @@ return {
   },
   font_size = 14.0,
 
+  -- Bell
+  audible_bell = "Disabled",
+
   -- Maus
   hide_mouse_cursor_when_typing = false,
 
