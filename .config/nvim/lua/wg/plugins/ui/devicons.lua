@@ -25,6 +25,16 @@ return {
         color = ignored_color,
         name = "EnvProduction"
       },
+      ["env.development"] = {
+        icon = env_icon,
+        color = ignored_color,
+        name = "EnvProduction"
+      },
+      ["env.example"] = {
+        icon = env_icon,
+        color = ignored_color,
+        name = "EnvProduction"
+      },
       ["env.keys"] = {
         icon = env_icon,
         color = ignored_color,
