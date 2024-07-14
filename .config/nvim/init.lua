@@ -1,6 +1,6 @@
 local lazy_path = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
-if not (vim.uv or vim.loop).fs_stat(lazy_path) then
+if not vim.loop.fs_stat(lazy_path) then
   vim.fn.system({
     "git",
     "clone",
@@ -14,13 +14,11 @@ end
 vim.opt.rtp:prepend(lazy_path)
 vim.loader.enable()
 
-require("wg.core")
+require("keymaps")
+require("options")
+
 require("lazy").setup(
-  {
-    { import = "wg.plugins" },
-    { import = "wg.plugins.lsp" },
-    { import = "wg.plugins.ui" },
-  },
+  "plugins",
   {
     checker = {
       enabled = true,
