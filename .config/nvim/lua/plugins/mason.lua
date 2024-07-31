@@ -8,6 +8,8 @@ return {
     require("mason-lspconfig").setup({
       ensure_installed = {
         "bashls",
+        "cmake",
+        "clangd",
         "cssls",
         "dockerls",
         "gopls",
