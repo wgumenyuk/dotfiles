@@ -7,11 +7,18 @@ return {
 
     local c = icons.c
     local h = icons.h
+    local makefile = icons.makefile
 
+    -- C Header
     h.icon = c.icon
 
+    -- Makefile
+    makefile.icon = ""
+    makefile.color = "orange"
+
     devicons.set_icon({
-      h = h
+      h = h,
+      makefile = makefile
     })
   end
 }
