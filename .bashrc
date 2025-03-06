@@ -8,8 +8,8 @@ HISTCONTROL=ignoreboth
 HISTSIZE=1000
 HISTFILESIZE=2000
 
-# Binaries
 export PATH="$HOME/bin:$PATH"
+export PNPM_HOME="$HOME/.local/share/pnpm"
 
 # Prompt
 export VIRTUAL_ENV_DISABLE_PROMPT=1
