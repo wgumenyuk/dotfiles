@@ -17,11 +17,12 @@ if [[ -f ~/.bash_aliases ]]; then
     source ~/.bash_aliases
 fi
 
+# PNPM
 export PNPM_HOME="$HOME/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 
-if [[ -d /usr/local/go/bin ]]; then
-	export PATH="$PATH:/usr/local/go/bin"
-fi
+# Go
+export PATH="$PATH:/usr/local/go/bin"
 
+# Binaries
 export PATH="$HOME/bin:$PATH"
