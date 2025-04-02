@@ -14,6 +14,14 @@ function get_os()
 	return nil
 end
 
+function basename(path)
+	return string.gsub(path, "(.*[/\\])(.*)", "%2")
+end
+
+wezterm.on("format-window-title", function(tab)
+	return basename(tab.active_pane.foreground_process_name) .. " | Terminal"
+end)
+
 return {
 	-- Shell
 	default_prog = get_os() == "windows" and { "powershell.exe" } or { "bash" },
