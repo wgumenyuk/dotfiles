@@ -27,7 +27,7 @@ return {
 	default_prog = get_os() == "windows" and { "powershell.exe" } or { "bash" },
 
 	-- Theme
-	color_scheme = "GitHub Dark",
+	color_scheme = "zenwritten_dark",
 	font = wezterm.font_with_fallback({
 		{
 			family = "JetBrainsMono Nerd Font Mono",
