@@ -10,7 +10,7 @@ HISTFILESIZE=2000
 
 # Prompt
 export VIRTUAL_ENV_DISABLE_PROMPT=1
-export PS1='\[\e[0m\]┌─\[\e[0m\] `if [[ ! -z $VIRTUAL_ENV ]]; then echo -n "\[\e[97m\]( $(basename $VIRTUAL_ENV))\[\e[0m\] "; fi`\[\e[92m\]\u@\H \[\e[94m\]\w\[\e[0m\]`export GIT=$(git branch --show-current 2> /dev/null); if [[ ! -z $GIT ]]; then echo -n "\[\e[0m\] (󰘬 $GIT)\[\e[0m\]"; fi`\n\[\e[0m\]└─\[\e[0m\] \[\e[97m\]\\$\[\e[0m\] '
+export PS1='\[\e[97m\]┌─\[\e[0m\] `if [[ ! -z $VIRTUAL_ENV ]]; then echo -n "\[\e[97m\]( $(basename $VIRTUAL_ENV))\[\e[0m\] "; fi`\[\e[92m\]\u@\H \[\e[94m\]\w\[\e[0m\]`export GIT=$(git branch --show-current 2> /dev/null); if [[ ! -z $GIT ]]; then echo -n "\[\e[97m\] (󰘬 $GIT)\[\e[0m\]"; fi`\n\[\e[97m\]└─\[\e[0m\] \\$ '
 
 # Aliases
 if [[ -f ~/.bash_aliases ]]; then
@@ -25,5 +25,4 @@ export PATH="$PNPM_HOME:$PATH"
 export PATH="$PATH:/usr/local/go/bin"
 
 # Binaries
-export PATH="$PATH:$HOME/bin"
-export PATH="$PATH:$HOME/.local/bin"
+export PATH="$HOME/bin:$PATH"
